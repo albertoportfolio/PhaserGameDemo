@@ -11,14 +11,9 @@ export default function App() {
       <div className={styles.gameLayout}>
         {/* HUD superior */}
         <header className={styles.hud}>
-          <span className={styles.logo}>▸ Juego de Prueba</span>
-          <div className={styles.hudStats}>
-            <Stat label="SCORE" value="000000" />
-            <Stat label="LIVES" value="03" />
-            <Stat label="LEVEL" value="01" />
-          </div>
+          <span className={styles.logo}>▸ RECOLECTA ESTRELLAS</span>
           <button className={styles.btnSmall} onClick={() => setScreen('menu')}>
-            ◂ MENU
+            ◂ PAGINA PRINCIPAL
           </button>
         </header>
 
@@ -48,9 +43,9 @@ export default function App() {
         </div>
 
         <h1 className={styles.title}>
-          <span className={styles.titleAccent}>JUEGO DE</span>
+          <span className={styles.titleAccent}>RECOLECTA</span>
           <br />
-          PRUEBA
+          ESTRELLAS
         </h1>
 
         <p className={styles.subtitle}>
@@ -59,7 +54,7 @@ export default function App() {
 
         <nav className={styles.menuNav}>
           <MenuBtn onClick={() => setScreen('game')} primary>
-            ▸ PLAY
+            ▸ JUGAR
           </MenuBtn>
       
         </nav>
